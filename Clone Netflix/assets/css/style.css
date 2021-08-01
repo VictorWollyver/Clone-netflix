@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline-style: none;
+}
+
+body {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.658)), url(/Assets/img/background.jpg);
+   background-repeat: no-repeat;
+}
+
+header {
+    padding: 1rem 0;
+    margin: 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#logo img {
+    filter: contrast(100)
+}
+
+section {
+    padding: 10;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+section h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+section p.font-size {
+    font-size: 1.5rem ;
+}
+
+button#login {
+    padding: 0.4rem 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+select#lang {
+    padding: 0.5rem 0;
+    width: 6rem;
+    background-color: rgba(0, 0, 0, 0.493);
+    border: 0.1rem solid rgb(255, 255, 255);
+    color: white;
+    margin-right: 1.5rem;
+}
+
+option {
+    background-color: gray;
+}
+
+div.input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.input-area input {
+    background-color: white;
+    padding: 1rem 0.5rem ;
+    width: 25rem ;
+    border: none;
+}
+
+div.input-area input:focus {
+    border: 0.01rem solid rgb(68, 255, 255);
+}
+
+div.input-area button {
+    padding: 1rem 0.5rem ;
+    width: 12.5rem;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+div.input-area button:hover {
+   background-color: rgb(255, 15, 15);
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 630px){
+    html{
+        font-size: 12px;
+}
+}
+
+@media (max-width: 452px){
+    input{
+        margin-bottom: 0.5rem;
+}
+    img#img-logo{
+        height: 2rem;
+    }
+}
+
+@media (min-width: 2000px){
+    body{
+        background-size: cover;
+    }
+}
+
+
